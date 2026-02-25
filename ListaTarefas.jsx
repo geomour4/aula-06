@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 
 export function ListaTarefas() {
@@ -17,12 +17,11 @@ export function ListaTarefas() {
     setEntrada("");
   }
 
-  function remover(indice) {
-    
-    itens.splice(indice, 1);
-    setItens(itens);
-  }
-
+ function remover(indice:number) { 
+const copia2 = [...itens] 
+copia2.splice(indice, 1); 
+setItens(copia2); 
+} 
   return (
     <div>
       <h2>Lista de Tarefas</h2>
