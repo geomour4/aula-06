@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function ControleTexto() {
   const [texto, setTexto] = useState("");
@@ -13,7 +13,7 @@ export default function ControleTexto() {
   }
 
  
-  function normalizaTexto(valor) {
+  function normalizarTexto(valor) {
     const v = valor.trim();
 
     if (v.length === 0) return "vazio";
