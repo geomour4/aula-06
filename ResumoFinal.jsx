@@ -8,13 +8,10 @@ export const ResumoFinal = () => {
 
   const [valor, setValor] = useState(0);
 
-  
-  function registrar(acao) (
-    const novoItem = `${acao} -> ${valor}`;
-    const novo = [...historico, novoItem];
 
-    setHistorico(novo);
-  )
+ export default function ResumoFinal() { 
+const [historico, setHistorico] = useState<string[]>([]); 
+const [valor, setValor] = useState(0); 
 
   function aumentar() {
     
