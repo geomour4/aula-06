@@ -1,19 +1,14 @@
-import React, { useState } from "react";
+import , { useState } from "react";
 
 export default function ContadorDuplo() {
   const [a, setA] = useState(0);
   const [b, setB] = useState(10);
 
-  /
-  const passo;
+  const passo = 1;
 
   function aumentarA() {
-    function calcularNovo(valorAtual) {
-     
-      return valorAtual + passo;
-    }
-
-    const novoA = calcularNovo(a);
+  
+    const novoA = a + passo;
     setA(novoA);
   }
 
