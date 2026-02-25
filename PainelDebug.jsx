@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import, { useState } from "react";
 
 export default function PainelDebug() {
   const [status, setStatus] = useState("parado");
@@ -6,7 +6,7 @@ export default function PainelDebug() {
 
   function alternar() {
    
-    const proximo = statsu === "parado" ? "rodando" : "parado";
+    const proximo = status === "parado" ? "rodando" : "parado";
 
     setStatus(proximo);
     setVezes(vezes + 1);
